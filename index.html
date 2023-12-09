@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="Paula Munteanu">
+    <meta name="keywords" content="Yoga,sală de yoga,cursuri de yoga,sănătate">
+    <meta name="description"
+        content="La Sage Yoga, credem că echilibrul și armonia sunt cheia unei vieți sănătoase și fericite. Cu rădăcinile noastre adânc ancorate în tradiția milenară a yoga, ne-am dedicat să vă oferim o oază de calm și introspecție în mijlocul agitației vieții cotidiene">
+    <title>Sage Yoga:Your path to balance </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .navbar {
+            background-color: rgb(213, 238, 249);
+            font-family: 'EB Garamond', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-inner .carousel-item {
+            height: 650px;
+        }
+
+        .carousel-inner img {
+            height: 100%;
+            object-fit:cover;
+        }
+
+        .carousel-example-fade-container {
+            position: relative;
+        }
+
+        .carousel-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: darkslategray;
+            z-index: 2;
+            background-color: snow;
+            font-family: 'Playfair Display', serif;
+        }
+        .caption{
+            text-align: center;
+
+        }
+
+        h2 {
+            color: darkslategray;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-family: 'EB Garamond', serif;
+        }
+
+        body {
+            background-color: snow;
+        }
+
+        footer {
+            background-color: rgb(213, 238, 249);
+            color: black;
+            text-align: center;
+
+        }
+
+        .testimonial {
+            background-color: rgb(219, 207, 223);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="#index.html">
+                    <img src="icons/meditation.png" alt="logo cu o persoană care meditează și i se văd chakrele">
+                </a>
+
+                <a class="navbar-brand" href="#index.html">SageYoga</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#despre-noi">Despre noi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicii">Servicii</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimoniale">Testimoniale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class="carousel-example-fade-container">
+            <div class="carousel-title p-2 text-center">
+
+                <h1>Sageyoga</h1>
+                <p class="p-1">Cursuri de yoga pentru toată lumea</p>
+            </div>
+            <div id="carouselExampleFade" class="carousel slide  d-block carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+
+                        <img src="carousel/zen1.jpg" class="d-block w-100" alt="un nufăr roz plutind pe lac">
+                    </div>
+                    <div class="carousel-item ">
+
+                        <img src="carousel/class2.jpg" class="d-block w-100"
+                            alt="fete la o oră de yoga">
+                    </div>
+                    <div class="carousel-item ">
+
+                        <img src="carousel/mat.jpg" class="d-block w-100"
+                            alt="femeie care își rulează covorul de yoga">
+                    </div>
+                    <div class="carousel-item ">
+
+                        <img src="carousel/astral-project.jpg" class="d-block w-100"
+                            alt="imagine cu o figură de om în poziție meditativă care transcede într-un alt plan al existenței">
+                    </div>
+                    <div class="carousel-item ">
+
+                        <img src="carousel/childs-pose.jpg" class="d-block w-100" alt="fata care face o pozitie de yoga">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="despre-noi" class="p-3">Despre noi</h2>
+        <p class="p-2">
+            La Sageyoga, experiența cursurilor de yoga transcende simpla activitate fizică, oferind
+            participanților o călătorie holistică către echilibru și armonie. Îndrumați de instructori
+            calificați și pasionați, cursurile noastre integrează tehnici tradiționale de yoga, concentrându-se
+            atât pe aspectele fizice, cât și pe cele mentale și spirituale. Atmosfera calmă și relaxantă a sălii
+            noastre creează un mediu propice pentru explorarea sinelui și dezvoltarea unei conexiuni profunde
+            între minte, corp și suflet. La Sageyoga, descoperiți o comunitate dedicată și o abordare autentică
+            a practicii yoga.
+        </p>
+    </div>
+    <div class="accordion accordion-flush container " id="accordionFlushExample">
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Cursurile noastre
+                </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>La Sageyoga, experiența cursurilor de yoga transcende simpla activitate
+                    fizică, oferind
+                    participanților o călătorie holistică către echilibru și armonie. Îndrumați de instructori
+                    calificați și pasionați, cursurile noastre integrează tehnici tradiționale de yoga, concentrându-se
+                    atât pe aspectele fizice, cât și pe cele mentale și spirituale. Atmosfera calmă și relaxantă a sălii
+                    noastre creează un mediu propice pentru explorarea sinelui și dezvoltarea unei conexiuni profunde
+                    între minte, corp și suflet. La Sageyoga, descoperiți o comunitate dedicată și o abordare autentică
+                    a practicii yoga.</p></div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Scurtă istorie
+                </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Descoperă o oază de liniște la SageYoga, unde tradiția și modernitatea se
+                    împletesc într-o experiență
+                    unică de yoga. Fondată de pasionați ai echilibrului mental și spiritual acum 25 de ani, sala noastră
+                    oferă un sanctuar urban pentru cei în căutare de armonie. Inspirată de înțelepciunea antică, echipa
+                    noastră dedicată te îndrumă în călătoria ta către echilibru interior, oferind clase diversificate și
+                    un ambient plin de serenitate. Îmbrățișează armonia la SageYoga și descoperă puterea transformării
+                    prin yoga autentică.</p></div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Importanța Yoga
+                </button>
+            </h3>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>De-a lungul secolelor, yoga a exercitat o influență semnificativă asupra
+                    sănătății umane, oferind
+                    beneficii atât fizice, cât și mentale. Prin practicarea regulată a posturilor, respirației
+                    controlate și meditației, oamenii au experimentat îmbunătățiri în flexibilitate, echilibru și
+                    rezistență. În plus, efectele pozitive asupra stresului și anxietății au contribuit la menținerea
+                    unei sănătăți mintale și emoționale optime. Yoga devine astfel un aliat esențial în călătoria spre o
+                    viață sănătoasă și echilibrată.</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 p-3">
+                <img src="zen3.jpg" alt="Statuetă cu buddha pe un fundal întunecat" class="img-fluid mx-auto d-block">
+                <p class="caption fs-6 p-1">Be as calm as this dude</p>
+            </div>
+            <div class="col-md-6 p-3">
+                <img src="crystal.jpg" alt="statuetă cu buddha și niște cuarț roz în spate"
+                    class="img-fluid mx-auto d-block">
+                <p class="caption fs-6 p-1">Or this one</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="servicii" class="p-3">Servicii</h2>
+        <p>Descoperă o gamă vastă de servicii yoga adaptate nevoilor tale la SageYoga! Oferim cursuri de yoga pentru
+            toate nivelurile, de la începători la avansați, pentru a-ți dezvolta echilibrul și flexibilitatea.
+            Instruitori dedicați îți vor ghida călătoria, iar abonamentele noastre variate includ beneficii precum acces
+            la spațiu de parcare, clase de meditație și multe altele. Începe-ți călătoria către bunăstare și echilibru
+            cu SageYoga!</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="cards/yoga-stretch1.jpg" class="card-img-top"
+                        alt="fată care își face încălzirea pe un covoraș de yoga">
+                    <div class="card-body">
+                        <h3 class="card-title">Tranquil (4 ședințe) - 400 RON</h3>
+                        <p class="card-text">Experimentează armonia și liniștea cu abonamentul Tranquil la SageYoga. Cu
+                            4 ședințe, acest pachet te introduce în practica yoga pentru a-ți îmbunătăți echilibrul și
+                            bunăstarea. O oportunitate perfectă pentru cei care doresc să descopere beneficiile yoga.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="cards/yoga-woman2.jpg" class="card-img-top"
+                        alt="femeie care face exerciții de mobilitate">
+                    <div class="card-body">
+                        <h3 class="card-title">StoicSoul (8 ședințe) - 760 RON + parcare și meditation class</h3>
+                        <p class="card-text">Descoperă echilibrul interior și forța interioară cu abonamentul StoicSoul
+                            de la SageYoga. Cu 8 ședințe, inclusiv o clasă de meditație, acest pachet îți oferă o
+                            călătorie profundă către starea de stoicism și înțelepciune. Beneficiază și de parcare
+                            gratuită.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="cards/yoga-stretch2.jpg" class="card-img-top"
+                        alt="fată care își antrenează flexibilitatea pe un covor de yoga">
+                    <div class="card-body">
+                        <h3 class="card-title">Sage (nelimitat) - 1000 RON + acces la spa, parcare și meditation class
+                        </h3>
+                        <p class="card-text">Atinge echilibrul absolut cu abonamentul Sage de la SageYoga. Oferind acces
+                            nelimitat, spațiu de parcare, clasă de meditație și acces la spa, acest pachet luxos îți
+                            aduce o experiență completă de yoga și relaxare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="cards/yoga-woman3.jpg" class="card-img-top" alt="femeie care face yoga">
+                    <div class="card-body">
+                        <h3 class="card-title">Single-use (1 ședință) - 80 RON<span class="badge bg-danger">On
+                                sale!</span></h3>
+                        <p class="card-text">Începe-ți călătoria în lumea yoga cu abonamentul Single-use la SageYoga. Cu
+                            o singură ședință, ai oportunitatea de a experimenta atmosfera noastră prietenoasă și de a
+                            descoperi beneficiile yoga într-un mod accesibil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="testimoniale" class="p-4">Testimoniale</h2>
+                <div class="testimonial m-3 p-3 rounded">
+                    <div class="testimonial-content">
+                        <p>"Am început să practic yoga la Sage Yoga acum câteva luni și experiența mea a fost absolut
+                            minunată.
+                            Instruitorii sunt extrem de profesioniști și prietenoși, iar atmosfera din clasă este
+                            liniștitoare.
+                            Fiecare ședință mă ajută să-mi regăsesc echilibrul interior și să-mi îmbunătățesc
+                            flexibilitatea.
+                            Recomand cu căldură Sage Yoga!"</p>
+                        <cite>- Maria
+                        </cite>
+                    </div>
+                </div>
+
+                <div class="testimonial m-3 p-3 rounded">
+                    <div class="testimonial-content">
+                        <p>"Cursurile de yoga de la Sage Yoga m-au ajutat să-mi gestionez stresul și să-mi îmbunătățesc
+                            postura.
+                            Instruitorii sunt dedicați și își aduc propria energie pozitivă în clasă. Îmi place
+                            diversitatea
+                            claselor oferite, de la Hatha Yoga la Vinyasa. Este locul perfect pentru oricine dorește
+                            să-și
+                            înceapă călătoria în lumea yoga."</p>
+                        <cite>- Andrei</cite>
+                    </div>
+                </div>
+
+                <div class="testimonial m-3 p-3 rounded">
+                    <div class="testimonial-content">
+                        <p>"Am descoperit Sage Yoga în căutarea unei comunități prietenoase și mă bucur că am făcut
+                            această
+                            alegere. Fiecare clasă este o călătorie unică și relaxantă. Comunitatea de la Sage Yoga este
+                            primitoare și încurajatoare, ceea ce face experiența mea de yoga și mai specială. Este locul
+                            în care
+                            mă simt acasă în timp ce lucrez asupra echilibrului meu."</p>
+                        <cite>- Roberta</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="contact" class="p-3">Contact</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2756.3734264799964!2d23.135145275518408!3d46.30242077712385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ecd382219ead7%3A0x78e9102113cc43ea!2sCol%C5%A3ul%20%C3%8Entelepciunii!5e0!3m2!1sro!2sro!4v1702134283431!5m2!1sro!2sro"
+                        class="w-100 h-100 p-2" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="p-2">
+                        <img src="icons/map.png" alt="icon cu o hartă și un indicator de Locație">
+                        <h2>Locație</h2>
+                        <p>Strada Înțelepciunii nr. 999</p>
+                        <img src="icons/calendar.png" alt="icon cu un calendar">
+                        <h2>Program</h2>
+                        <p>
+                            Luni-Sâmbătă
+                            05:00-23:00
+                            Duminică
+                            08:00-20:00
+                        </p>
+                        <img src="icons/contact-mail.png" alt="icon cu un telefon și un email">
+                        <h2>Contactează-ne</h2>
+                        <p>
+                            Telefon: 0712345678
+                            Mail: Sageyoga@iloveyoga.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="p-3 w-100">
+        <p>&copy; 2023 SageYoga. All rights reserved. Find us on
+            <a href="https://www.instagram.com/magicyogacluj/" target="_blank">
+                <img src="icons/instagram.png" alt="icon cu instagram" class="p-3">
+            </a>
+            <a href="https://www.facebook.com/YogaHubCluj" target="_blank">
+                <img src="icons/facebook.png" alt="icon cu facebook" class="p-3">
+            </a>
+        </p>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
